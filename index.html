@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos JS</title>
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+    }
+    .texto{
+        color: aliceblue;
+    }
+</style>
 <body>
     <script>
         window.alert('Alerta inicial');
-        var a = window.prompt('Confirma seu nome pra mim');
+        var nome = window.prompt('Confirma seu nome pra mim');
+        var num1 = 3;
+        var num2 = 2;
+        var soma = num1 + num2;
+        var tamanho = nome.length>8?'grande':'pequeno';
+        var cookies = window.navigator.cookieEnabled?'ligados':'desligados';
+        var ache = window.document.getElementById('medo')
     </script>
+<h1>Estudos JS</h1>
+<h2>Estudo das variaveis</h2>
+<p><script>document.write(`estou testando como faz ${num1} + ${num2}, aparentemente é: ${soma}`)</script></p>
+<p><script>document.write(`Seu nome é ${tamanho}, ele tem ${nome.length} caracteres `)</script></p>
+<h2>Estudo em DOM</h2>
+<div id='hidden'><p class='texto' id='medo'>Estou escondido</p></div>
+<p>Você está no navegador: <script>window.document.write(window.navigator.appName)</script></p>
+<p>Seus cookies estão: <script>document.write(`${cookies}`)</script></p>
 
-    
-    <h1>Começamos <script>document.write(a)</script>.</h1>
+<script>
+var ache = window.document.getElementById('medo')
+</script>
 
+
+<p> Ache o texto: <script>window.document.write(ache.innerText)</script></p>
 </body>
 </html>
