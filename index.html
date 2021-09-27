@@ -1,45 +1,131 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudos JS</title>
-</head>
-<style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: aliceblue;
-    }
-    .texto{
-        color: aliceblue;
-    }
-</style>
-<body>
-    <script>
-        window.alert('Alerta inicial');
-        var nome = window.prompt('Confirma seu nome pra mim');
-        var num1 = 3;
-        var num2 = 2;
-        var soma = num1 + num2;
-        var tamanho = nome.length>8?'grande':'pequeno';
-        var cookies = window.navigator.cookieEnabled?'ligados':'desligados';
-        var ache = window.document.getElementById('medo')
-    </script>
-<h1>Estudos JS</h1>
-<h2>Estudo das variaveis</h2>
-<p><script>document.write(`estou testando como faz ${num1} + ${num2}, aparentemente é: ${soma}`)</script></p>
-<p><script>document.write(`Seu nome é ${tamanho}, ele tem ${nome.length} caracteres `)</script></p>
-<h2>Estudo em DOM</h2>
-<div id='hidden'><p class='texto' id='medo'>Estou escondido</p></div>
-<p>Você está no navegador: <script>window.document.write(window.navigator.appName)</script></p>
-<p>Seus cookies estão: <script>document.write(`${cookies}`)</script></p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
-var ache = window.document.getElementById('medo')
-</script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>EstudosJS</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Offcanvas navbar</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class='corpo'>
+    <div class='dentro'>
+    <figure class="text-center"> <blockquote class="blockquote">
+    <h2>EstudosJS</h2>
+    </blockquote>
+    <figcaption class="footer">
+    <h6>Minha jornada conhecendo <cite title="Source Title">Javascript</cite></h6>
+  </figcaption></figure>
 
 
-<p> Ache o texto: <script>window.document.write(ache.innerText)</script></p>
+
+<h3>
+    Introdução
+</h3>
+<p>
+    Nesse repositório vou mostrar minha jornada de aprendizado do Javascript, por mais de ser um programador Back-End adorador de PHP entendo a importância do Javascript no mercado
+    atual de tecnologia, não pretendo virar um expert em JS mas pretendo conhecer os fundamentos da linguagem para poder me tornar um programador mais completo. :)
+</p>
+
+
+    
+
+<h3>
+    Alertas
+</h3>
+<p>
+    Acho que a primeira coisa que qualquer pessoa aprende no Javascript são seus alertas, além de muito útil mostra bem oque o objetivo base do JS, melhorar 
+    a expêriencia Web e sofisticar seus métodos, no total há 3 tipos de alertas, os de Informação, Confirmação e de Prompt.
+</p>
+<h4>
+    Exemplos
+</h4>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+
+
+<h3>
+    DOM [Modelo de Objeto de Documento]
+</h3>
+<p>
+    Uma parte muito importante do desenvolvimento em JS é o Modelo de Objeto de Documento, apartir dele conseguimos pegar (praticamente) qualquer informação de uma página
+    web. No exemplo embaixo você poderá escolher (quase) qualquer informação selecionada de (quase) qualquer coisa dessa página. Esse assunto é muito extenso então 
+    deixarei um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model">link da MDN que explica melhor esse assunto.</a>
+</p>
+<h4>
+    Exemplos
+</h4>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+
+
+<h3>
+    Operadores Matemáticos e de Condição.
+</h3>
+<p>
+    Essa parte é o básico de qualquer linguagem de programação e é muito sabermos como ela funciona no Javascript, aqui temos muitas semelhanças ao PHP,
+     tanto nos 
+</p>
+<h4>
+    Exemplos
+</h4>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+
+
+</div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
 </body>
 </html>
