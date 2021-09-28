@@ -12,9 +12,14 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-light">
+    
+    <nav class="navbar fixed-top navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1>Offcanvas navbar</h1></a>
+          <a class="navbar-brand">
+            <img src="jsicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Pedro Caires
+          </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,7 +56,9 @@
               </form>
             </div>
           </div>
+          
         </div>
+
       </nav>
 <div class='corpo'>
     <div class='dentro'>
@@ -72,9 +79,8 @@
     atual de tecnologia, não pretendo virar um expert em JS mas pretendo conhecer os fundamentos da linguagem para poder me tornar um programador mais completo. :)
 </p>
 
-
+<hr/>
     
-
 <h3>
     Alertas
 </h3>
@@ -85,10 +91,13 @@
 <h4>
     Exemplos
 </h4>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
 
+<button type="button" class="btn btn-warning">Alerta de Informação</button>
+<button type="button" class="btn btn-warning">Alerta de Confirmação</button>
+<button type="button" class="btn btn-warning">Alerta de Prompt</button>
+
+
+<hr/>
 
 <h3>
     DOM [Modelo de Objeto de Documento]
@@ -96,18 +105,45 @@
 <p>
     Uma parte muito importante do desenvolvimento em JS é o Modelo de Objeto de Documento, apartir dele conseguimos pegar (praticamente) qualquer informação de uma página
     web. No exemplo embaixo você poderá escolher (quase) qualquer informação selecionada de (quase) qualquer coisa dessa página. Esse assunto é muito extenso então 
-    deixarei um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model">link da MDN que explica melhor esse assunto.</a>
+    deixarei um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model">link da MDN que explica melhor esse assunto</a>.
 </p>
 <h4>
     Exemplos
 </h4>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
 
+<div class="container">
+  <div class="row align-items-start">
+<div class="col ">
+<select class="form-select" aria-label="Default select example">
+  <option selected>Ação</option>
+  <option value="select">Selecionar</option>
+  <option value="delete">Deletar</option>
+  <option value="alert">Mostrar HTML</option>
+</select>
+</div>
+
+<div class="col">
+<select class="form-select" aria-label="Default select example">
+  <option selected>Do elemento de ID = </option>
+  <option value="1">ID: 1</option>
+  <option value="2">ID: 2</option>
+  <option value="3">ID: 3</option>
+  <option value="4">ID: 4</option>
+  <option value="5">ID: 5</option>
+  <option value="6">ID: 6</option>
+</select>
+</div>
+<div class="col">
+  <button type="button" class="btn btn-dark">Fazer</button>
+</div>
+</div>
+</div>
+
+
+<hr/>
 
 <h3>
-    Operadores Matemáticos e de Condição.
+    Jquery e outras bibliotecas
 </h3>
 <p>
     Essa parte é o básico de qualquer linguagem de programação e é muito sabermos como ela funciona no Javascript, aqui temos muitas semelhanças ao PHP,
@@ -116,10 +152,24 @@
 <h4>
     Exemplos
 </h4>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#lista-home" role="tab" aria-controls="home">Home</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Perfil</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#lista-mensagens" role="tab" aria-controls="messages">Mensagens</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#lista-configuracoes" role="tab" aria-controls="settings">Configurações</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
 
 </div>
 

@@ -1,9 +1,75 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #121416;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #373D43;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #373D43;
+    border-radius: 10px;
+
+  }
+
+
+
 .corpo{
-    background-color: aquamarine;
-    margin: 2%;
-    border-radius: 5px;
+    background-color: #121416;
+    margin: 9%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    border-radius: 100px;
+    border: 2px solid #373D43;
+
+}
+
+body{
+    background-color: #121416;
+    color: white;
 }
 
 .dentro{
-    padding: 1%;
+    padding: 2%;
+    padding-bottom: 60px;
+    
+    
 }
+
+.offcanvas-title{
+    color: white;
+}
+
+.navbar{
+    background-color: #121416;
+    border-bottom: 5px solid #f7e018  ;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding-bottom: 20px;
+    
+}
+
+.offcanvas-body{
+    background-color: #121416;
+}
+
+.offcanvas-header{
+    background-color: #121416;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #373D43;
+  }
