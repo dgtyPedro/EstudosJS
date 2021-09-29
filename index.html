@@ -10,11 +10,10 @@
     <link href="style.css" rel="stylesheet">
     <title>EstudosJS</title>
   </head>
-  <body>
+  <body id='cinco'>
 
-    
     <nav class="navbar fixed-top navbar-dark">
-        <div class="container-fluid">
+        <div class="container-fluid" id="um">
           <a class="navbar-brand">
             <img src="jsicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Pedro Caires
@@ -60,7 +59,10 @@
         </div>
 
       </nav>
-<div class='corpo'>
+ 
+
+<div class='corpo' id='dois'>
+  
     <div class='dentro'>
     <figure class="text-center"> <blockquote class="blockquote">
     <h2>EstudosJS</h2>
@@ -92,9 +94,9 @@
     Exemplos
 </h4>
 
-<button type="button" class="btn btn-warning">Alerta de Informação</button>
-<button type="button" class="btn btn-warning">Alerta de Confirmação</button>
-<button type="button" class="btn btn-warning">Alerta de Prompt</button>
+<button type="button" class="btn btn-warning" onclick="info()">Alerta de Informação</button>
+<button type="button" class="btn btn-warning" onclick="conf()">Alerta de Confirmação</button>
+<button type="button" class="btn btn-warning" onclick="escrever()">Alerta de Prompt</button>
 
 
 <hr/>
@@ -104,17 +106,17 @@
 </h3>
 <p>
     Uma parte muito importante do desenvolvimento em JS é o Modelo de Objeto de Documento, apartir dele conseguimos pegar (praticamente) qualquer informação de uma página
-    web. No exemplo embaixo você poderá escolher (quase) qualquer informação selecionada de (quase) qualquer coisa dessa página. Esse assunto é muito extenso então 
+    web. No exemplo embaixo você poderá escolher (quase) qualquer informação selecionada de algumas coisas dessa página. Esse assunto é muito extenso então 
     deixarei um <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model">link da MDN que explica melhor esse assunto</a>.
 </p>
 <h4>
     Exemplos
 </h4>
 
-<div class="container">
+<div class="container" id='tres'>
   <div class="row align-items-start">
 <div class="col ">
-<select class="form-select" aria-label="Default select example">
+<select class="form-select" id="primeiro" aria-label="Default select example">
   <option selected>Ação</option>
   <option value="select">Selecionar</option>
   <option value="delete">Deletar</option>
@@ -123,18 +125,17 @@
 </div>
 
 <div class="col">
-<select class="form-select" aria-label="Default select example">
-  <option selected>Do elemento de ID = </option>
-  <option value="1">ID: 1</option>
-  <option value="2">ID: 2</option>
-  <option value="3">ID: 3</option>
-  <option value="4">ID: 4</option>
-  <option value="5">ID: 5</option>
-  <option value="6">ID: 6</option>
+<select class="form-select" id="segundo" aria-label="Default select example">
+  <option selected>Elementos</option>
+  <option value="one">ID: 1</option>
+  <option value="two">ID: 2</option>
+  <option value="three">ID: 3</option>
+  <option value="four">ID: 4</option>
+  <option value="five">ID: 5</option>
 </select>
 </div>
 <div class="col">
-  <button type="button" class="btn btn-dark">Fazer</button>
+  <button type="button" class="btn btn-dark" onclick="escolha()">Fazer</button>
 </div>
 </div>
 </div>
@@ -142,17 +143,17 @@
 
 <hr/>
 
-<h3>
+<h3 id='cinco'>
     Jquery e outras bibliotecas
 </h3>
-<p>
+<p id='cinco'>
     Essa parte é o básico de qualquer linguagem de programação e é muito sabermos como ela funciona no Javascript, aqui temos muitas semelhanças ao PHP,
      tanto nos 
 </p>
 <h4>
     Exemplos
 </h4>
-<div class="row">
+<div class="row" id='quatro'>
   <div class="col-4">
     <div class="list-group" id="list-tab" role="tablist">
       <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#lista-home" role="tab" aria-controls="home">Home</a>
