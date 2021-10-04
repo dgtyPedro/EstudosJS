@@ -1,6 +1,11 @@
-function clicou() {
-}
 
+function jquery() {
+    $(document).ready(function(){
+        $("button").click(function(){
+          $(".navbar").toggle(1000);
+        });
+      });
+    }
 
 function info(){
     alert('Isso é um alerta de informação');
